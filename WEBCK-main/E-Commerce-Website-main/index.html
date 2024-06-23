@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -26,9 +27,9 @@
       <div class="container nav_container">
         <a href="#" class="nav_logo">Honkai Shop</a>
         <ul class="nav_list">
-          <li class="nav_item"><a href="/" class="nav_link">Trang chủ</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Giới thiệu</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Liên hệ </a></li>
+          <li class="nav_item"><a href="./index.html" class="nav_link">Trang chủ</a></li>
+          <li class="nav_item"><a href="./Gioithieu.html" class="nav_link">Giới thiệu</a></li>
+          <li class="nav_item"><a href="./ContactUs.html" class="nav_link">Liên hệ </a></li>
           <li class="nav_item">
             <a href="./sign-up.html" class="nav_link">Đăng kí</a>
           </li>
@@ -65,13 +66,13 @@
     <nav class="mobile_nav mobile_nav_hide">
       <ul class="mobile_nav_list">
         <li class="mobile_nav_item">
-          <a href="/" class="mobile_nav_link">Trang chủ</a>
+          <a href="./index.html" class="mobile_nav_link">Trang chủ</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link">Giới thiệu</a>
+          <a href="./Gioithieu.html" class="mobile_nav_link">Giới thiệu</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="#" class="mobile_nav_link">Liên hệ</a>
+          <a href="./ContactUs.html" class="mobile_nav_link">Liên hệ</a>
         </li>
         <li class="mobile_nav_item">
           <a href="/sign-up.html" class="mobile_nav_link">Đăng kí</a>
@@ -84,15 +85,15 @@
     <header class="header">
       <div class="container header_container">
         <div class="header_filter">
-          <a href="#" class="header_filter_link">Máy tính xách tay</a>
-          <a href="#" class="header_filter_link">Màn hình máy tính</a>
-          <a href="#" class="header_filter_link">Sản phẩm Apple</a>
-          <a href="#" class="header_filter_link">Phím chuột, Gaming Gear</a>
-          <a href="#" class="header_filter_link">Loa, Tai nghe,Webcam </a>
-          <a href="#" class="header_filter_link">Card đồ họa, Tản nhiệt</a>
-          <a href="#" class="header_filter_link">Ghế Gaming</a>
+          <a href="./laptop.html" class="header_filter_link">Máy tính xách tay</a>
+          <a href="./screen.html" class="header_filter_link">Màn hình máy tính</a>
+          <a href="./Apple.html" class="header_filter_link">Sản phẩm Apple</a>
+          <a href="./KeyBoard.html" class="header_filter_link">Phím chuột, Gaming Gear</a>
+          <a href="./Loa.html" class="header_filter_link">Loa, Tai nghe,Webcam </a>
+          <a href="./VGA.html" class="header_filter_link">Card đồ họa, Tản nhiệt</a>
+          <a href="./ghegaming.html" class="header_filter_link">Ghế Gaming</a>
           <a href="#" class="header_filter_link">Ram, SSD, HDD, Mainboard</a>
-          <a href="#" class="header_filter_link">Bảo dưỡng và nâng cấp</a>
+          <a href="./ContactUs.html" class="header_filter_link">Bảo dưỡng và nâng cấp</a>
         </div>
         <img src="./image/header.png" alt="" class="header_img" />
       </div>
@@ -1001,8 +1002,11 @@
         </div>
         <div class="categories">
           <div class="category">
+            <a href="#">
             <img src="./image/icons/camera.png" alt="" class="category_icon" />
-            <p class="category_name">Máy ảnh</p>
+            <p class="category_name">Máy ảnh 
+            </p>
+            </a>
           </div>
           <div class="category">
             <img
@@ -2711,6 +2715,18 @@
         </div>
       </div>
     </footer>
+    <div id="qrcode"></div>
+    <!--<script>
+        // Tạo mã QR cho URL của trang hiện tại
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: window.location.href,
+            width: 128,
+            height: 128,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script> -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
